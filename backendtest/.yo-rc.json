@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.meep.backendtest"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "microservice",
+    "baseName": "backendtest",
+    "packageName": "com.meep.backendtest",
+    "packageFolder": "com/meep/backendtest",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MzNiOTlhZDZiZGRiMzNiNDIyZmEwZDVjNGFkNWFmMjY3M2RkZGQ2ZDM4MTFjYjA5MTVlYTEwOThmMDZkOWZiYmNiMDZlODM3NTQyZWY0ZTg3MzcxMzgyMGZjZWM4ZDY5OWI1ZjRhNWUyN2I0MWQzNmMzNWIzMDVjMWQwY2U2MzM=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "backendtest",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "lowerLeftLatLon",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "upperRightLatLon",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyZoneIds",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "result",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "update",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20191013172611",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "position",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "backendtest"
+}
