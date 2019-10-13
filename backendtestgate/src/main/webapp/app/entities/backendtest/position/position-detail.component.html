@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="position">
+            <h2><span>Position</span> {{position.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Lower Left Lat Lon</span></dt>
+                <dd>
+                    <span>{{position.lowerLeftLatLon}}</span>
+                </dd>
+                <dt><span>Upper Right Lat Lon</span></dt>
+                <dd>
+                    <span>{{position.upperRightLatLon}}</span>
+                </dd>
+                <dt><span>Company Zone Ids</span></dt>
+                <dd>
+                    <span>{{position.companyZoneIds}}</span>
+                </dd>
+                <dt><span>Result</span></dt>
+                <dd>
+                    <span>{{position.result}}</span>
+                </dd>
+                <dt><span>Update</span></dt>
+                <dd>
+                    <span>{{position.update}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/position', position.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

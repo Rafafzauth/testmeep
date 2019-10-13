@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.meep.backendtestgate",
+      "microservicePath": "../backendtest"
+    },
+    "jhipsterVersion": "6.4.0",
+    "applicationType": "gateway",
+    "baseName": "backendtestgate",
+    "packageName": "com.meep.backendtestgate",
+    "packageFolder": "com/meep/backendtestgate",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDk3MmRkNWViZDM2YjZjZjYwMzg1MDU5NzVhODc1NmMxNjFhM2E3NWM5YWJkOTRiN2U3ZmVhNTdmM2NhZmQ2ZDE1OGYzZTY5ZmQ1YTMzYTZjMjA1NmJmZTI3NmFmZWZhZWM4YzlkNTA0NTA3YTBjN2Q3MDE5MDJmNGM3NGQ1OGI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

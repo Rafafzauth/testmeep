@@ -1,0 +1,66 @@
+<div>
+    <h2 id="page-heading">
+        <span>Positions</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-position" [routerLink]="['/position/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span >
+            Create a new Position
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="positions?.length === 0">
+        <span>No positions found</span>
+    </div>
+    <div class="table-responsive" *ngIf="positions?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr>
+            <th scope="col" ><span>ID</span></th>
+            <th scope="col" ><span>Lower Left Lat Lon</span></th>
+            <th scope="col" ><span>Upper Right Lat Lon</span></th>
+            <th scope="col" ><span>Company Zone Ids</span></th>
+            <th scope="col" ><span>Result</span></th>
+            <th scope="col" ><span>Update</span></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let position of positions ;trackBy: trackId">
+                <td><a [routerLink]="['/position', position.id, 'view' ]">{{position.id}}</a></td>
+                <td>{{position.lowerLeftLatLon}}</td>
+                <td>{{position.upperRightLatLon}}</td>
+                <td>{{position.companyZoneIds}}</td>
+                <td>{{position.result}}</td>
+                <td>{{position.update | date:'mediumDate'}}</td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/position', position.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/position', position.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/position', { outlets: { popup: position.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
