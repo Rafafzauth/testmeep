@@ -38,3 +38,4 @@
 ## Posibles mejoras:
 - Para servir, el cacheo en memoria se hace con HazelCast, la configuración está por defecto. Podría sustituirse por Kafka.
 - Monitorización de los servicios externos. Si el servicio externo cae por mucho tiempo, los datos podrían resultar falseados, no hay monitorización.
+- Completar pruebas unitarias. He realizado pocas pruebas en este desarrollo.
