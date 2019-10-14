@@ -11,7 +11,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "application", ignoreUnknownFields = false)
 public class ApplicationProperties {
 
-    private String meeturl;
+    private String meepurl;
     private String lowerLeftLatLon;
     private String upperRightLatLon;
     private String companyZoneIds;
@@ -19,12 +19,12 @@ public class ApplicationProperties {
     private long connectionTimeout;
     private long readTimeout;
 
-    public String getMeeturl() {
-        return meeturl;
+    public String getMeepurl() {
+        return meepurl;
     }
 
-    public void setMeeturl(String meeturl) {
-        this.meeturl = meeturl;
+    public void setMeepurl(String meepurl) {
+        this.meepurl = meepurl;
     }
 
     public String getCompanyZoneIds() {
