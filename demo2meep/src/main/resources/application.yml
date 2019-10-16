@@ -1,0 +1,28 @@
+logging:
+  level:
+    ROOT: INFO
+    com.meep.demo2meep: INFO
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:file:./target/h2db/db/backendtest;DB_CLOSE_DELAY=-1
+    username: backendtest
+    password:
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+  jpa:
+    database: h2
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.H2Dialect
+      ddl-auto: create-drop
+  
+meep2demo:
+  meepurl: https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources?lowerLeftLatLon=38.711046,-9.160096&upperRightLatLon=38.739429,-9.137115&companyZoneIds=545,467,473
+  lowerLeftLatLon: 38.711046,-9.160096
+  upperRightLatLon: 38.739429,-9.137115
+  companyZoneIds: 545,467,473
+  connectionTimeout: 20000
+  readTimeout: 15000
